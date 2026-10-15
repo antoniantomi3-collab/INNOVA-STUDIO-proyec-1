@@ -1,0 +1,41 @@
+/* Pie compartido: Inicio, Nosotros y Servicios. */
+.footer{
+  color:rgba(255,255,255,.72);
+  background:radial-gradient(circle at 100% 50%,rgba(141,188,14,.10),transparent 32%),linear-gradient(120deg,#020403,#080d0a 50%,#122d1b);
+  border-top:4px solid #8dbc0e;
+}
+.footer .footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr) minmax(0,1.25fr) minmax(0,.8fr);
+  gap:35px 55px;
+  align-items:start;
+  padding:55px 0 35px;
+}
+.footer .footer-brand{display:flex;flex-direction:column;align-items:flex-start;grid-column:auto;min-width:0}
+.footer .footer-brand strong{display:block;margin:0 0 24px;color:#fff;font-size:1.35rem;font-weight:800;letter-spacing:0}
+.footer .footer-brand p{max-width:320px;margin:0 0 26px;color:rgba(255,255,255,.72);font-size:.85rem;line-height:1.8}
+.footer .footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:13px;min-width:0}
+.footer .footer-column h3{position:relative;display:inline-block;margin:5px 0 28px;color:#fff;font-size:.85rem;font-weight:800;text-transform:uppercase}
+.footer .footer-column h3::after{content:"";position:absolute;left:0;bottom:-10px;width:38px;height:3px;border-radius:3px;background:#8dbc0e}
+.footer .footer-column a,.footer .footer-column .footer-address{display:flex;align-items:flex-start;gap:10px;color:rgba(255,255,255,.72);font-size:.78rem;line-height:1.7;overflow-wrap:anywhere;text-decoration:none;transition:color .2s}
+.footer .footer-column a:hover{color:#a6d91c;transform:none}
+.footer .footer-column i{width:18px;flex:0 0 18px;margin-top:3px;color:#a6d91c;text-align:center}
+.footer .footer-pagos{display:block;width:190px;max-width:100%;height:auto;margin:0;object-fit:contain;transform:none}
+.footer .socials{display:flex;align-items:center;gap:12px;margin:0}
+.footer .socials a{display:flex;align-items:center;justify-content:center;width:52px;height:52px;padding:0;border-radius:50%;color:#fff;font-size:1.15rem;line-height:1;text-decoration:none}
+.footer .socials a.facebook{background:#1877f2}
+.footer .socials a.tiktok{background:#050505;border:1px solid rgba(255,255,255,.2)}
+.footer .socials a.instagram{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)}
+.footer .footer-grid > div.footer-logo-row:not(.footer-brand){grid-column:1/-1;display:flex;align-items:center;justify-content:center;min-width:0;margin:10px 0 0;padding:0}
+.footer .footer-logo-row img{display:block;position:static;width:200px;max-width:50%;height:auto;margin:0;object-fit:contain;transform:none!important}
+.footer .footer-bottom{display:flex;justify-content:center;align-items:center;width:100%;margin:0;padding:20px 25px;border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.15);color:rgba(255,255,255,.55);text-align:center;font-size:.72rem}
+.footer .footer-bottom p{margin:0;color:inherit;font-size:inherit}
+@media(max-width:950px){
+  .footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 45px;padding:50px 0 35px}
+  .footer .footer-brand{grid-column:auto}
+}
+@media(max-width:600px){
+  .footer .footer-grid{grid-template-columns:minmax(0,1fr);gap:30px;padding:45px 0 30px}
+  .footer .footer-brand{grid-column:auto}
+  .footer .footer-logo-row img{width:220px}
+}
